@@ -1,3 +1,6 @@
+"""
+用时396.94988656044006
+"""
 from MAG_paper.tools import connect_to_table, timestamp
 import math, multiprocessing
 
@@ -31,8 +34,8 @@ import math, multiprocessing
 
 
 def find_hcp(a, b, proc_id):
-    col1 = connect_to_table('wangwenbin', 'mag_phy_top')
-    col2 = connect_to_table('wangwenbin', 'HCP')
+    col1 = connect_to_table('wangwenbin', 'MAG_Physics_Cite')
+    col2 = connect_to_table('wangwenbin', 'HCP_3')
 
     col2.remove({})
     papers = []
